@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDM</title>
+</head>
+<style>
+
+.backbtn {
+        background-color: #252726;
+        margin-top: 15px;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .bg {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        right: -50%;
+        bottom: -50%;
+        width: 200%;
+        height: 200vh;
+        background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+        background-repeat: repeat;
+        animation: bg-animation .2s infinite;
+        opacity: .9;
+        visibility: visible;
+    }
+
+    @keyframes bg-animation {
+        0% {
+            transform: translate(0, 0)
+        }
+
+        10% {
+            transform: translate(-5%, -5%)
+        }
+
+        20% {
+            transform: translate(-10%, 5%)
+        }
+
+        30% {
+            transform: translate(5%, -10%)
+        }
+
+        40% {
+            transform: translate(-5%, 15%)
+        }
+
+        50% {
+            transform: translate(-10%, 5%)
+        }
+
+        60% {
+            transform: translate(15%, 0)
+        }
+
+        70% {
+            transform: translate(0, 10%)
+        }
+
+        80% {
+            transform: translate(-15%, 0)
+        }
+
+        90% {
+            transform: translate(10%, 5%)
+        }
+
+        100% {
+            transform: translate(5%, 0)
+        }
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    input[type=password],
+    select,
+    textarea {
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    /* Style the label to display next to the inputs */
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    /*style the cancel button*/
+    button[type=reset] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .split {
+        height: 80%;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    /* Control the left side */
+    .left {
+        left: 5;
+        width: 19%;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .line {
+        left: 0;
+        width: 100%;
+    }
+
+    /* Control the right side */
+    .right {
+        right: 0;
+        width: 79%;
+    }
+
+    /* Floating column for labels: 25% width */
+    .col-25 {
+        float: left;
+        width: 25%;
+
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .my_text {
+        color: #414248;
+    }
+
+    .shadow{
+        box-shadow: 2px 3px 4px 5px rgba(20,20,20,0.4);
+        padding: 10px;
+    }
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 640px) {
+
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+</style>
+
+<body style="background-color: #D5D8DC; padding: 50px;">
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="passport.html">Passport</a>
+        <a href="license.html">Driving License</a>
+        <a href="mmvy.html">MMVY</a>
+        <a href="ayushmann.html">Ayushmaan Bharat Scheme</a>
+    </div>
+
+    <div class="my_text">
+        <h1>
+            <marquee scrollamount="20"><u>AYUSHMAAN BHARAT SCHEME</u></marquee>
+        </h1>
+    </div>
+    <hr>
+
+
+    <div class="my_text" style="margin-top: 20px;">
+        <div class="shadow">
+            <h2><u>AYUSHMAN BHARAT DIGITAL MISSION</u></h2>
+            <p>
+                Ayushman Bharat Yojana or National Health Protection Scheme is a
+                program which aims to provide a service to create a healthy, capable and
+                content new India. Presently it is running as a pilot project in Uttar Pradesh
+                from 4 September 2018. It has two goals, one, creating a network of health
+                and wellness infrastructure across the nation to deliver comprehensive
+                primary healthcare services, and another is to provide insurance cover to at
+                least 40 per cent of India's population which is majorly deprived of
+                secondary and tertiary care services. This centrally sponsored flagship
+                scheme aims to provide an annual health cover of up to Rs. 5 lakh to
+                vulnerable 10 crore families (approximately 50 crore persons - 40% of
+                country's population) based on Socio Economic and Caste Census database.
+            </p>
+            <br>
+            <p>OFFICIAL WEBSITE:- <a href="https://abdm.gov.in/">https://abdm.gov.in/</a></p>
+            AYUSHMAN BHARAT MADHYA PRADESH:-<A
+                HREF="https://ayushmanbharat.mp.gov.in/">https://ayushmanbharat.mp.gov.in/</A>
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>Registration and Eligibility for Rural Areas :-</u></h2>
+            The eligibility criteria can be checked on the Ayushman Bharat official website and
+            can be verified as given below:
+            <ul>
+                <li>Families living in only one room with kachcharoof and kaccha walls</li>
+                <li>SC/ST households</li>
+                <li>Tribal groups</li>
+                <li>Destitute and manual scavenger families</li>
+                <li>Laborers</li>
+                <li>Families with no adults between 16 and 59 years.</li>
+                <li>Female-headed families with no adult member in the age group of 16-59 years.</li>
+                <li>Families with one disabled member and no adult member with abled-bodies</li>
+                <li>Landless households deriving income from manual casual labours</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>How to Check your Eligibility Offline?</u></h2>
+            <p>To register and check your eligibility offline to enroll under the scheme, you can
+                dial the toll-free helpline number 14555. The rest of the process is given below:</p>
+            <ul>
+                <li>Visit the siteand enter your mobile number.</li>
+                <li>Enter the Captcha letters displayed on the screen, and click on "Generate OTP".</li>
+                <li>An OTP will be sent to you over a text message on your registered mobile
+                    number. Enter this and click on Verify OTP.</li>
+                <li>You can enter your mobile number/ration card number, which directs you to a
+                    screen where you can check your eligibility, RSBY URN, and Socio-Economic Caste
+                    Census (SECC) name.</li>
+                <li>If you have your name on the list, it will reflect on the right side of the page.</li>
+                <li>Go to the 'Family Members' tab to view the details of the beneficiary and family
+                    member's information covered under the scheme.</li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>Registration and Eligibility for Urban areas :-</u></h2>
+            <p>The list by the government for the following 11 occupational categories is given
+                below:</p>
+            <ul>
+                <li>Beggar, Rag picker, & Domestic worker</li>
+                <li>Gardner/Sweeper/ Sanitation worker</li>
+                <li>Hawker/Cobbler/Street vendor</li>
+                <li>Chowkidar/ Washerman/Mechanic/Electrician/Repair Worker</li>
+                <li>Plumber/ Construction worker/ Mason/ Painter/ Security guard/Coolie</li>
+                <li>Tailor/ Artisans/Home-based worker/ Handicrafts workers</li>
+                <li>Transport worker/ driver/ conductor/ rickshaw puller/cart-puller</li>
+                <li>Assistant/shop worker/ peons/ waiter/helper/ attendant/delivery assistant</li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="shadow">
+            <h2><u>Ayushman Card Eligibility Criteria -</u></h2>
+        <ul>
+            <li>The applicant must be an Indian citizen.</li>
+            <li>The applicant must provide evidence of income that is less than
+                the BPL.</li>
+            <li>There cannot be a pucca residence registered in either of the
+                applicant's names for the applicant or any member of the
+                applicant's family to be eligible for this health benefit.</li>
+            <li>The applicant will not be eligible for this health card under any
+                circumstances if he has previously received assistance from any
+                other type of government housing program.</li>
+            <li>Additionally, negotiations are underway to expand the scope of
+                this capability in order to assist the greatest number of people
+                with the Ayushman Bharat Card.</li>
+        </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>Documents Required to Ayushman Card Apply Online -</u></strong></p>
+        <p>For the PMJAY Portal at PMJAY.gov.in to generate an ABHA Card Number,
+            the basic documents listed below must be submitted. Therefore, please
+            gather all of these documents before you begin the Ayushman Card Apply
+            Online Registration process.</p>
+        <ul>
+            <li>Aadhar Card linked with Mobile Number.</li>
+            <li>Bank Account Number.</li>
+            <li>Medical Certificate.</li>
+            <li>Declaration regarding Medical Condition.</li>
+            <li>Income Proof.</li>
+            <li>Domicile Certificate.</li>
+            <li>Caste Certificate</li>
+        </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>Benefits of Ayushman Bharat Yojana -</u></strong></p>
+        <p>Several Ayushman Bharat Yojana 2023 benefits can be claimed once your
+            ABHA registration is complete.</p>
+        <ul>
+            <li>Using your ABHA Card Number, you can be admitted to any
+                hospital that takes part in this program.</li>
+            <li>All illnesses, minor and big, are completely free to be treated
+                with this Ayushman Bharat Card.</li>
+            <li>You are entitled to free medical care at any hospital for up to Rs
+                5 lakhs per year for a single member of your household.</li>
+            <li>The Ayushman Bharat Yojana 2023 will pay for all diagnostic
+                procedures, lab work, medications, and admission costs.</li>
+        </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>How to Apply Online for Ayushman Bharat Card?</u></strong></p>
+        <ul>
+            <li>Candidates must access pmjay.gov.in and click the Am I Eligible
+                option.</li>
+            <li>Enter the OTP you received on your registered mobile number
+                along with your Aadhar number.</li>
+            <li>If you are qualified to use this link, the Online Application Link
+                will appear on the following page.</li>
+            <li>Enter your name, address, and other necessary information
+                under Personal and Family Details.</li>
+            <li>When you submit the form, your screen will display the ABHA
+                Card Number.</li>
+            <li>Your family members applications will also be approved in a
+                few days, and this is your Ayushman Bharat Card number.</li>
+            <li>Your Dashboard will then display the Ayushman Bharat Card
+                2023 that was created.</li>
+        </ul>
+        </div>
+    </div>
+    <a href="javascript:window. history. back();"><button type="back" class="backbtn">&laquo; Previous</button></a>
+</body>
+
+</html>

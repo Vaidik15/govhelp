@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMVY</title>
+</head>
+<style>
+    .backbtn {
+        background-color: #252726;
+        margin-top: 15px;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .bg {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        right: -50%;
+        bottom: -50%;
+        width: 200%;
+        height: 200vh;
+        background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+        background-repeat: repeat;
+        animation: bg-animation .2s infinite;
+        opacity: .9;
+        visibility: visible;
+    }
+
+    @keyframes bg-animation {
+        0% {
+            transform: translate(0, 0)
+        }
+
+        10% {
+            transform: translate(-5%, -5%)
+        }
+
+        20% {
+            transform: translate(-10%, 5%)
+        }
+
+        30% {
+            transform: translate(5%, -10%)
+        }
+
+        40% {
+            transform: translate(-5%, 15%)
+        }
+
+        50% {
+            transform: translate(-10%, 5%)
+        }
+
+        60% {
+            transform: translate(15%, 0)
+        }
+
+        70% {
+            transform: translate(0, 10%)
+        }
+
+        80% {
+            transform: translate(-15%, 0)
+        }
+
+        90% {
+            transform: translate(10%, 5%)
+        }
+
+        100% {
+            transform: translate(5%, 0)
+        }
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    input[type=password],
+    select,
+    textarea {
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    /* Style the label to display next to the inputs */
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    /*style the cancel button*/
+    button[type=reset] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+
+    .line {
+        left: 0;
+        width: 100%;
+    }
+
+
+    /* Floating column for labels: 25% width */
+    .col-25 {
+        float: left;
+        width: 25%;
+
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .my_text {
+        color: #414248;
+    }
+
+    .shadow {
+        box-shadow: 2px 3px 4px 5px rgba(20, 20, 20, 0.4);
+        padding: 10px;
+    }
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 640px) {
+
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+</style>
+
+<body style="background-color: #D5D8DC; padding: 50px;">
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="passport.html">Passport</a>
+        <a href="license.html">Driving License</a>
+        <a href="mmvy.html">MMVY</a>
+        <a href="ayushmann.html">Ayushmaan Bharat Scheme</a>
+    </div>
+
+    <div class="my_text">
+        <h1>
+            <marquee scrollamount="20"><u>Mukhyamantri Medhavi Vidyarthi Yojana (MMVY)</u></marquee>
+        </h1>
+    </div>
+    <hr>
+
+    <div class="my_text" style="margin-top: 20px;">
+        <div class="shadow">
+            <h2><u>What Is MMVY Scholarship MP 2023?</u></h2>
+            <p>The Mukhya Mantri Medhavi Vidyarthi Yojana is a prestigious scholarship
+                scheme that is only available for permanent residents of Madhya Pradesh
+                state. To avail of the benefit of this scheme, you must have passed the Class
+                12th examination with a minimum of 70% marks if you studied on the state
+                board and around 85% marks for CBSE and ICSE board. The annual income of
+                your family must be below Rupees 6,00,000. The applicants will be eligible for
+                many benefits under this scholarship scheme. You can fill up the application
+                form from the official website of the organization.</p>
+            <br>
+            <strong>Mantri Medhavi Vidyarthi Yojana :- </strong><a
+                href="https://scholarshipportal.mp.nic.in/Index.aspx">https://scholarshipportal.mp.nic.in/</a>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>Benefits Of MMVY Scholarship</u> -</h2>
+            <p>The following benefits will be provided to the candidates in this scholarship
+                scheme:-</p>
+            <ul>
+                <li>The students enrolling in an engineering program at a
+                    government/non-government college will receive full fees for the
+                    course. However, the students enrolling in a private college will
+                    receive INR 1.5 Lakh or the actual course fee (whichever is less).</li>
+                <li>The students enrolling in a medical degree program at a
+                    government/private medical/dental college will also receive the
+                    full tuition fee.</li>
+                <li>The students enrolling in a law degree program at National Law
+                    Universities in India will also receive full course fees under this
+                    scheme.</li>
+                <li>Besides this, the students pursuing an undergraduate or
+                    integrated postgraduate program from a recognized institution
+                    will also receive full tuition fees</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>MMVY Scholarship Eligibility Criteria</u> -</h2>
+            <p>The applicant must follow the following eligibility criteria to be eligible for this
+                scholarship scheme:- </p>
+            <ul>
+                <li>The applicant must be a resident of Madhya Pradesh.</li>
+                <li>He/ She must have passed Class 12 with 70% or more marks (if
+                    appeared through the Secondary Education Board of Madhya
+                    Pradesh) or have obtained 85% or more marks (if appeared
+                    through CBSE/ICSE Board).</li>
+                <li>The applicant must have an annual parent/guardian income of
+                    less than INR 6 lakh from all sources.</li>
+                <li>The applicant must have enrolled in an undergraduate-level of
+                    course at a recognized university or institution.</li>
+                <li>Engineering Aspirants must have qualified JEE Main exam with a
+                    rank less than 1,50,000.</li>
+                <li>Medical Aspirants must have obtained admission to a private/
+                    government medical/ dental college through NEET merit.</li>
+                <li>Law Aspirants must have cleared the CLAT exam and obtained
+                    admission to any National Law University or Delhi University.</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>Documents Required</u> -</strong></p>
+            <p>The following documents must be submitted by the candidates while filling up
+                the application form :-</p>
+            <ul>
+                <li>Aadhaar Card of the Candidate</li>
+                <li>Annual Income Certificate</li>
+                <li>Domicile of Madhya Pradesh</li>
+                <li>Class 12th Marksheet</li>
+                <li>Proof of Admission</li>
+                <li>10th Scorecard and Certificates</li>
+                <li>Photo of Applicant</li>
+                <li>Complete Bank Details like Name of Bank, IFSC or MICR Code, Branch Name, etc</li>
+                <li>Contact Number</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>Terms and Conditions</u> :-</strong></p>
+            <p>The applicant will have to follow the following terms and conditions to apply
+                for this scholarship scheme:-</p>
+            <ul>
+                <li>Applicants who are taking the benefits of this scheme have to
+                    complete their higher education in the given time period.</li>
+                <li>Charges payable to students of government institutions will be
+                    payable in the account of the institution, while fees payable to
+                    students studying in private institutions will be payable in the
+                    account of students.</li>
+                <li>In case of the student receives support from any other plan of the
+                    State or Central Government, he/ she will get the odd amount.</li>
+                <li>All the recipients of this scheme and their families can return the
+                    amount given under this scheme to other beneficiaries like them.</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>MMVY Scholarship Application Procedure</u> :-</strong></p>
+            <p>Apply for the scholarship you will have to follow the simple procedure
+                given below :-</p>
+            <ul>
+                <li>First, click on the link given here to go to the MMVY web page for the scholarship official website.
+                </li>
+                <li>The homepage of the scholarship will open on your screen.</li>
+                <li>Now you have to click on the option called Application present on the menu bar.</li>
+                <li>A drop down menu will open on your screen</li>
+                <li>You have to click on the option called Resister on Portal(New student)</li>
+                <li>A new page will open on your screen</li>
+                <li>You have to fill up the registration form.</li>
+                <li>Include all of your details regarding your education and your
+                    personal information.</li>
+                <li>Enter your address</li>
+                <li>Checkmark the declaration</li>
+                <li>Click on the option called Check Form Validation.</li>
+                <li>The application will be successfully submitted.</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>Managing Application</u> :-</strong></p>
+            <p>If you want to manage your application then you will have to follow the simple
+                procedure given below :-</p>
+            <ul>
+                <li>First, click on the link given here to go to the official web page for
+                    the MMVY Scholarship.</li>
+                <li>The homepage of the scholarship will open on your screen.</li>
+                <li>Now you have to click on the option called Application present on the menu bar.</li>
+                <li>A drop down menu will open on your screen</li>
+                <li>You have to click on the option called Registered User
+                    Register And Manage Your Application</li>
+                <li>A new page will open on your screen.</li>
+                <li>Login using your details..</li>
+                <li>Now you can successfully manage your application.</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>MMVY Login</u> :-</strong></p>
+            <ul>
+                <li>First, click on the link given here to go to the official web page for
+                    the MMVY Scholarship.</li>
+                <li>The homepage of the scholarship will open on your screen.</li>
+                <li>Now from the homepage of the website, go to the Login option.</li>
+                <li>A new login page will open.</li>
+                <li>Enter the login details like username and password.</li>
+                <li>Now click on the login option.</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <p style="font-size: 20px;"><strong><u>Checking Application Status</u> :-</strong></p>
+            <p>If you want to track your application then you will have to follow the following application procedure :-
+            </p>
+            <ul>
+                <li>First, click on the link given here to go to the official web page for
+                    the MMVY Scholarship.</li>
+                <li>The homepage of the scholarship will open on your screen.</li>
+                <li>Now you have to click on the option called Application present
+                    on the menu bar.</li>
+                <li>A drop down menu will open on your screen.</li>
+                <li>You have to click on the option called Track Your Application Status</li>
+                <li>A new page will open on your screen</li>
+                <li>Enter your application number and academic year.</li>
+                <li>Click on Show My Application.</li>
+                <li>The application status will open on your screen.</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <a href="javascript:window. history. back();"><button type="back" class="backbtn">&laquo; Previous</button></a>
+    
+
+
+
+</body>
+
+</html>

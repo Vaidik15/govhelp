@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving License</title>
+</head>
+<style>
+
+.backbtn {
+        background-color: #252726;
+        margin-top: 15px;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .bg {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        right: -50%;
+        bottom: -50%;
+        width: 200%;
+        height: 200vh;
+        background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+        background-repeat: repeat;
+        animation: bg-animation .2s infinite;
+        opacity: .9;
+        visibility: visible;
+    }
+
+    @keyframes bg-animation {
+        0% {
+            transform: translate(0, 0)
+        }
+
+        10% {
+            transform: translate(-5%, -5%)
+        }
+
+        20% {
+            transform: translate(-10%, 5%)
+        }
+
+        30% {
+            transform: translate(5%, -10%)
+        }
+
+        40% {
+            transform: translate(-5%, 15%)
+        }
+
+        50% {
+            transform: translate(-10%, 5%)
+        }
+
+        60% {
+            transform: translate(15%, 0)
+        }
+
+        70% {
+            transform: translate(0, 10%)
+        }
+
+        80% {
+            transform: translate(-15%, 0)
+        }
+
+        90% {
+            transform: translate(10%, 5%)
+        }
+
+        100% {
+            transform: translate(5%, 0)
+        }
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    input[type=password],
+    select,
+    textarea {
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    /* Style the label to display next to the inputs */
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    /*style the cancel button*/
+    button[type=reset] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .split {
+        height: 80%;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    /* Control the left side */
+    .left {
+        left: 5;
+        width: 19%;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .line {
+        left: 0;
+        width: 100%;
+    }
+
+    /* Control the right side */
+    .right {
+        right: 0;
+        width: 79%;
+    }
+
+    /* Floating column for labels: 25% width */
+    .col-25 {
+        float: left;
+        width: 25%;
+
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .my_text {
+        color: #414248;
+    }
+
+    .shadow {
+        box-shadow: 2px 3px 4px 5px rgba(20, 20, 20, 0.4);
+        padding: 10px;
+    }
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 640px) {
+
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+</style>
+
+<body style="background-color:#D5D8DC; padding:50px;">
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="passport.html">Passport</a>
+        <a href="license.html">Driving License</a>
+        <a href="mmvy.html">MMVY</a>
+        <a href="ayushmann.html">Ayushmaan Bharat Scheme</a>
+    </div>
+    <div class="my_text">
+        <h1>
+            <marquee scrollamount="20px"><u>DRIVING LICENSE</u></marquee>
+        </h1>
+        <hr>
+    </div>
+    <div class="my_text" style="margin-top: 20px;">
+        <div class="shadow">
+            <h2><u>Driving license</u></h2>
+            <p>In India, a driving license is an official document that
+                authorises its holder to operate various
+                types of motor vehicles</a>on highways and some other
+                roads to which the public has access. In
+                various Indian states, they are administered by the Regional Transport
+                Authorities/Offices</a> (RTA/RTO). A
+                driving license is required in India by any person driving a
+                vehicle on any highway or other road defined in the Motor Vehicles Act, 1988. This act sets
+                limits
+                on the minimum age for vehicle operation ranging from 16 to 20, depending on specific
+                circumstances.
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>Parivahan Sewa</u> :-</h2>
+            <p><strong>To visit official website for Parivahan Sewa: </strong><a href="https://parivahan.gov.in">CLICK HERE</a></p>
+            <h2><u>Eligibility for Driving license in India :-</u></h2>
+            <p>To receive a permanent DL in India, one must fulfil the following eligibility criteria.</p>
+            <ul>
+                <li>The applicant must be at least 18 years old.</li>
+                <li>The applicant must first obtain a Learner's license and apply for DL after 30 days.</li>
+                <li>The applicant needs to submit his/her DL application within 6 months of LL issuance.</li>
+                <li>The applicant has to successfully pass the tests associated with LL and DL.</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+
+            <h2><u>Documents Required</u></h2>
+            <p><strong>Documents required for driving license?</strong>
+                <br>
+                <br>
+                You need the following records to apply for a driving license in India:</p>
+            <ul>
+                <li>Your age proof (Submit one of the following documents)</li>
+                <li>Birth Certificate</li>
+                <li>Passport</li>
+                <li>PAN Card</li>
+                <li>10th class mark sheet</li>
+                <li>Transfer certificate with your date of birth printed on it.</li>
+                <li>Your current address proof (If you are applying for a license in a state other than your
+                    home state)</li>
+                <li>Rental agreement and electricity bill</li>
+                <li>Your permanent address proof (Submit one of the following)</li>
+                <li>Passport</li>
+                <li>Aadhaar Card</li>
+                <li>Electricity bill (issued in your name)</li>
+                <li>Ration Card</li>
+                <li>LIC bond</li>
+                <li>Voters ID Card</li>
+                <p>Additional requirements for the application process :-</p>
+                <li>Application form</li>
+                <li>6 passport sized photographs for the application for a learner's license</li>
+                <li>1 passport-sized photograph for the application for a permanent license</li>
+                <li>Application Fees</li>
+                <li>If you are above the age of 40, you also need to submit a medical certificate - Form 1 and 1A that a
+                    government doctor issue.</li>
+
+            </ul>
+            <p> Now that you know the documents required for driving license, the next thing you need to know is
+                how to apply for a permanent driving license in India. Once you have your learner's license, you
+                can apply for the permanent license directly from the official government website. Alternatively,
+                you can also visit the RTO with all the required documents to initiate the proces</p>
+        </div>
+        <br>
+        <br>
+        <div class="shadow" style="padding: 50px;">
+            <div class="shadow">
+                <h2><u>Steps for Applying</u> -</h2>
+                <h3>Driving license application process in India -</h3>
+                There are both online and offline DL application options available in India. It allows
+                applicants to choose a preferred method of getting a DL issued. The following
+                sections highlight the processes for online and offline applications for a new Driving
+                license in India.</p>
+
+                <h3>How to apply for a Driving license online in India -</h3>
+                <p>Here is how you can apply for a Driving license online in India.</p>
+                <ul>
+                    <li>Step 1: Visit the official transport website known as <a
+                            href="https://parivahan.gov.in/parivahan/">Parivahan Sewa</a>.</li>
+                    <li>Step 2: Upon reaching the home screen, get to the “Online Services” and
+                        then to "Driving license Related Services".</li>
+                    <li>Step 3: You will be redirected to another portal called Sarathi.</li>
+                    <li>Step 4: Select the state (location) where you live and then choose “Apply for
+                        Learner's license (LL)”.</li>
+                    <li>Step 5: Submit your LL application along with appropriate documents and the
+                        required fee.</li>
+                    <li>Step 6: Take your preliminary exam on the scheduled date of the test to
+                        obtain an LL.</li>
+                    <li>Step 7: Hold on to the LL for at least 30 days and keep practising your driving
+                        skills.</li>
+                    <li> Step 8: Now, get to the Sarathi portal once again to apply for a permanent
+                        Driving license.</li>
+                    <li>Step 9: Via the “Apply for Driving license” section, you can fill in your
+                        application as an applicant holding LL.</li>
+                    <li>Step 10: Get a driving test slot, pay the charges and get your receipt.</li>
+                    <li>Step 11: Visit the local Regional Transport Office (RTO) to take your DL test.</li>
+                </ul>
+                <p> An officer will conduct and assess your performance during the driving test. Then,
+                    you will be sent to record your biometric data. After that, you can wait for the DL to
+                    be delivered to your address through the postal service.</p>
+            </div>
+            <br>
+            <br>
+            <div class="shadow">
+                <h3>How to apply for a Driving license offline in India -</h3>
+                <p>Here is how you can apply for a Driving license offline in India -</p>
+                <ul>
+                    <li>Step 1: Visit the Parivahan platform to download <a
+                            href="https://parivahan.gov.in/parivahan/en/content/all-forms">Form 2</a> or obtain it at
+                        your
+                        local Regional Transport Office.</li>
+                    <li>Step 2: Fill out details in Form 2 for Learning license and submit at the local
+                        RTO with other documents.</li>
+                    <li>Step 3: You need to choose a slot for the Learning license test and an
+                        application number.</li>
+                    <li>Step 4: Use the application number to appear for the test and receive your LL
+                        upon successful completion.</li>
+                    <li>Step 5: Select a slot for your DL driving test as per the given options.</li>
+                    <li>Step 6: Submit the standard application fee and get your acknowledgement
+                        slip.</li>
+                    <li>Step 7: Visit the RTO on the scheduled date to take your test.</li>
+                </ul>
+                <p> Upon completing the test, you will be requested to record your biometric details.
+                    Then, the RTO will take a couple of days for document verification before sending
+                    your DL through courier/post.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>Types of Driving licenses in India</u> -</h2>
+            <p>The types of Driving licenses differ based on the type of vehicle they are issued for
+                in India. Here are the five main categories of DLs one can apply for -</p>
+            <ul>
+                <li>Gearless two-wheeler DL (Such as mopeds and gearless scooters)</li>
+                <li>Geared two-wheeler DL (Such as bikes and geared scooters)</li>
+                <li>Light motor vehicle DL (Such as sedans, hatchbacks, SUVs, etc.)</li>
+                <li>Transport vehicle DL (Such as trucks, vans, buses, etc.)</li>
+                <li>Other categories (Such as a vehicle that transports hazardous items)</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="shadow">
+            <h2><u>Driving license fees in India</u> -</h2>
+        <p>Here are the fees charged for different kinds of DL-related services in India.</p>
+
+        <table border="1">
+            <tr>
+                <th>Type of DL service</th>
+                <th>Fees(in Rs.) </th>
+            </tr>
+            <tr>
+                <td>Issuing LL</td>
+                <TD>150</TD>
+            </tr>
+            <TR>
+                <TD>Fee for LL-related test/retest</TD>
+                <td>50</td>
+            </TR>
+            <tr>
+                <td>Issuing DL</td>
+                <TD>200</TD>
+            </tr>
+            <TR>
+                <TD>Fee for driving test/retest</TD>
+                <td>300</td>
+            </TR>
+        </table>
+        </div>
+        <a href="javascript:window. history. back();"><button type="back" class="backbtn">&laquo; Previous</button></a>
+</body>
+
+</html>

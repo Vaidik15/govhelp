@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+  }
+
+  @keyframes bg-animation {
+    0% {
+      transform: translate(0, 0)
+    }
+
+    10% {
+      transform: translate(-5%, -5%)
+    }
+
+    20% {
+      transform: translate(-10%, 5%)
+    }
+
+    30% {
+      transform: translate(5%, -10%)
+    }
+
+    40% {
+      transform: translate(-5%, 15%)
+    }
+
+    50% {
+      transform: translate(-10%, 5%)
+    }
+
+    60% {
+      transform: translate(15%, 0)
+    }
+
+    70% {
+      transform: translate(0, 10%)
+    }
+
+    80% {
+      transform: translate(-15%, 0)
+    }
+
+    90% {
+      transform: translate(10%, 5%)
+    }
+
+    100% {
+      transform: translate(5%, 0)
+    }
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=password],
+  select,
+  textarea {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=number],
+  select,
+  textarea {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+  }
+
+  /*style the cancel button*/
+  button[type=reset] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 50%;
+    margin-top: 40px;
+  }
+
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+  }
+
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 25%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-top: 60px;
+  }
+
+  .bgimg {
+    background: url(Images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+</style>
+
+<body class="bgimg" style="padding: 30px;">
+  <div class="topnav">
+    <a class="active" href="">Home</a>
+    <a href="">Passport</a>
+    <a href="">Driving License</a>
+    <a href="">MMVY</a>
+    <a href="">Ayushmaan Bharat Scheme</a>
+  </div>
+  <div class="center">
+
+    <img src="Images/icon.jpeg" width="200px" height="200px">
+  </div>
+
+
+  <form>
+    <center>
+      <div class="container">
+        <div class="row">
+          <div class="col-75">
+            <label>Username</label>
+          </div>
+          <input type="text" placeholder="Enter Username" name="username" required>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <label>Password </label>
+          </div>
+          <input type="password" placeholder="Enter Password" name="password" required>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <input type="text" placeholder="Your name.." name="firstname">
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <input type="text" name="lastname" placeholder="Your name..">
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="age">Age</label>
+          </div>
+          <div class="row">
+            <div class="col-75">
+            </div>
+            <input type="number" name="age" placeholder="Enter your age ">
+          </div>
+          <button type="reset" class="cancelbtn"> Cancel</button>
+          <div class="row">
+            <input type="submit" value="Sign Up" formaction="homepage.html">
+          </div>
+    </center>
+  </form>
+</body>
+
+</html>
